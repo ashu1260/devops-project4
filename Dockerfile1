@@ -8,4 +8,5 @@ COPY website/  /var/www/html
 
 EXPOSE 80
 
+# to start the httpd service
 CMD  ["/usr/sbin/httpd", "-DFOREGROUND"] 
