@@ -1,8 +1,11 @@
 FROM  centos
 
-RUN yum install httpd -y 
+RUN yum install httpd  -y 
 
 RUN yum install curl -y 
+
+RUN yum  update
+
 
 COPY website/  /var/www/html
 
